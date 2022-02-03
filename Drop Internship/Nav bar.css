@@ -1,0 +1,116 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.left {
+  margin-left: 60px;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+.right a:hover {
+  text-decoration: underline;
+}
+.icon {
+  display: none;
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+.parcel {
+  width: 60%;
+  position: absolute;
+  left: 20%;
+}
+.parceldiv {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+.parceldiv p {
+  font-size: 20px;
+}
+.homedrone {
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.arrow {
+  position: absolute;
+  left: 45%;
+  top: 70%;
+  transform: rotate(-38.34deg);
+}
+@media screen and (max-width: 600px) {
+  .right a:not(:last-child) {
+    display: none;
+  }
+  .icon {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    height: 120px;
+    display: block;
+    padding: 10px;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  .topnav.responsive .right a {
+    display: block;
+    text-align: center;
+    margin: 4px;
+  }
+  .home {
+    display: block;
+  }
+  .homedrone {
+    width: 80%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+  .parceldiv {
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+  }
+  .parcel {
+    position: absolute;
+    left: 35%;
+    width: 40%;
+  }
+  .arrow {
+    position: absolute;
+    left: 23%;
+    top: 42%;
+
+    width: 60%;
+    transform: rotate(-108.34deg);
+  }
+}
