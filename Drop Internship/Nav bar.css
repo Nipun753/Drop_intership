@@ -106,10 +106,8 @@ body {
     font-size: 20px;
   }
   .parcel {
-    position: absolute;
-    top: 50px;
-    left: 118px;
     width: 40%;
+    left: 33%;
   }
   .arrow {
     position: absolute;
