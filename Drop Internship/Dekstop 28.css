@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.left {
+  margin-left: 60px;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+.right a:hover {
+  text-decoration: underline;
+}
+.icon {
+  display: none;
+}
+
+.home::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.99;
+}
+
+.dronee {
+  width: 700px;
+  height: 150px;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+.home2 {
+  display: flexbox;
+  flex-direction: row;
+}
+
+.home2::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.99;
+}
+
+.home2 p {
+  position: absolute;
+  color: white;
+  top: 40%;
+  left: 10%;
+  font-size: 20px;
+}
+.text {
+  color: white;
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  font-size: 20px;
+}
+.text h3 {
+  color: gray;
+}
+
+.parcel {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 40%;
+  left: 63%;
+  z-index: 10;
+}
+.gallerysec {
+  position: relative;
+  top: 600px;
+}
+.GALLARY {
+  width: 1510px;
+}
+.aboutus {
+  color: white;
+  position: relative;
+  top: 600px;
+  margin: 20px;
+  width: 700px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+}
+.aboutus h1 {
+  display: block;
+  width: 100%;
+}
+.aboutus p {
+  margin-top: 20px;
+  color: gray;
+  font-size: large;
+}
+.Socials {
+  color: white;
+  position: relative;
+  top: 600px;
+  margin: 20px;
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+}
+.Socials h1 {
+  display: block;
+  width: 100%;
+}
+.Socials i {
+  color: gray;
+  font-size: 50px;
+  margin-top: 20px;
+  padding-right: 50px;
+}
+.rope {
+  position: absolute;
+  left: 1060px;
+  top: 350px;
+}
+
+@media screen and (max-width: 600px) {
+  .right a:not(:last-child) {
+    display: none;
+  }
+  .icon {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    height: 150px;
+    display: block;
+    padding: 10px;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  .topnav.responsive .right a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 4px;
+  }
+  .GALLARY {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .dronee {
+    top: 400px;
+    left: 0%;
+    height: 100px;
+    width: 100%;
+  }
+  .text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+    top: 150px;
+  }
+  .parcel {
+    left: 33%;
+    top: 500px;
+    width: 40%;
+    height: 150px;
+  }
+  .aboutus {
+    width: 100%;
+    padding: 0px;
+    margin: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .Socials {
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+
+    margin-bottom: 100px;
+  }
+  .Socials i {
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 30px;
+  }
+}
