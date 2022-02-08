@@ -127,7 +127,6 @@ body {
   width: 100%;
 }
 .aboutus p {
-  margin-top: 20px;
   color: gray;
   font-size: large;
 }
@@ -154,12 +153,10 @@ body {
   margin-top: 20px;
   padding-right: 50px;
 }
-.rope {
-  position: absolute;
-  left: 1060px;
-  top: 350px;
+.empty {
+  margin-top: 100px;
+  height: 200px;
 }
-
 @media screen and (max-width: 600px) {
   .right a:not(:last-child) {
     display: none;
@@ -202,7 +199,8 @@ body {
     width: 100%;
     text-align: center;
     left: 0px;
-    top: 150px;
+    top: 200px;
+    font-size: 15px;
   }
   .parcel {
     left: 33%;
@@ -221,12 +219,13 @@ body {
     width: 100%;
     text-align: center;
     padding: 0%;
-
+    margin: 20px;
     margin-bottom: 100px;
   }
   .Socials i {
     margin: 0px;
-    margin-left: 5px;
+    margin-left: 2px;
     font-size: 30px;
+    margin-bottom: 50px;
   }
 }
