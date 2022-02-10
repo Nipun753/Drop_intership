@@ -1,0 +1,141 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+i {
+  color: white;
+}
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.left {
+  margin-left: 60px;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+.right a:hover {
+  text-decoration: underline;
+}
+.icon {
+  display: none;
+}
+.drone {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+.pre {
+  width: 200px;
+  text-align: center;
+  overflow: hidden;
+  float: right;
+  margin-top: 5px;
+}
+.pre div {
+  padding: 5px;
+}
+.pre a {
+  color: white;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.preview {
+  display: none;
+}
+.icon {
+  display: none;
+}
+
+/* ***************************************************************** VIEW 4 CSS ************************************************** */
+
+.text {
+  position: absolute;
+  color: white;
+  top: 40%;
+  left: 100px;
+  opacity: 1;
+  animation: textanimation 4s forwards;
+}
+
+@keyframes textanimation {
+  100% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+}
+
+.text h1 {
+  font-size: 40px;
+}
+
+.text p {
+  width: 550px;
+  height: 105px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .right a:not(:last-child) {
+    display: none;
+  }
+  .icon {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .droveDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .drone {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 15%;
+  }
+  .text {
+    z-index: 10;
+    position: absolute;
+    color: white;
+    opacity: 1;
+    left: 0px;
+    top: 70%;
+    animation: textanimation 4s forwards;
+  }
+  .text h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .text p {
+    padding: 5px;
+    width: 400px;
+    height: 0px;
+    text-align: center;
+    font-size: 25px;
+  }
+  @keyframes textanimation {
+    100% {
+      opacity: 0;
+      transform: translateY(-750px);
+    }
+  }
+}
