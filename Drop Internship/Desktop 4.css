@@ -69,6 +69,7 @@ i {
   position: absolute;
   color: white;
   top: 70%;
+  width: 550px;
   left: 100px;
   opacity: 0;
   animation: textanimation 4s forwards;
@@ -86,8 +87,6 @@ i {
 }
 
 .text p {
-  width: 550px;
-  height: 105px;
   font-size: 25px;
 }
 
@@ -102,19 +101,18 @@ i {
 @media screen and (max-width: 600px) {
   .droveDiv {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
   .drone {
     position: absolute;
     width: 300px;
     height: 200px;
-    left: 15%;
+    left: 13%;
   }
   .text {
     position: absolute;
     color: white;
     opacity: 0;
+    width: 100%;
     left: 0px;
     animation: textanimation 4s forwards;
   }
@@ -125,7 +123,6 @@ i {
   }
   .text p {
     padding: 5px;
-    width: 400px;
     height: 0px;
     text-align: center;
     font-size: 25px;
@@ -137,3 +134,4 @@ i {
     }
   }
 }
+
