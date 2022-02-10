@@ -101,14 +101,13 @@ i {
 @media screen and (max-width: 600px) {
   .droveDiv {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
   .drone {
     position: absolute;
     width: 300px;
     height: 200px;
-    left: 15%;
+    left: 10%;
+    top: 170px;
   }
   .text {
     z-index: 10;
@@ -121,16 +120,14 @@ i {
     animation: textanimation 4s forwards;
   }
   .text h1 {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
   }
   .text p {
     padding: 5px;
-    width: 400px;
-    height: 0px;
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
   }
   @keyframes textanimation {
     100% {
