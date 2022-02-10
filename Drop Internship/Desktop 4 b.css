@@ -69,6 +69,7 @@ i {
   position: absolute;
   color: white;
   top: 40%;
+  width: 550px;
   left: 100px;
   opacity: 1;
   animation: textanimation 4s forwards;
@@ -86,8 +87,6 @@ i {
 }
 
 .text p {
-  width: 550px;
-  height: 105px;
   font-size: 25px;
 }
 
@@ -117,6 +116,7 @@ i {
     color: white;
     opacity: 1;
     left: 0px;
+    width: 100%;
     top: 70%;
     animation: textanimation 4s forwards;
   }
