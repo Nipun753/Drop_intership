@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow: hidden;
+  background-color: black;
+}
 
 #navbar {
   padding-top: 1rem;
@@ -133,12 +137,20 @@
   top: 30%;
   animation-delay: 0.3s;
 }
-.calender {
+.clock {
   position: absolute;
+  top: 500px;
   left: 350px;
-  height: 650px;
+  width: 350px;
+  opacity: 0;
+  animation: textanimation 3s forwards;
 }
-
+@keyframes textanimation {
+  100% {
+    opacity: 1;
+    transform: translateY(-380px);
+  }
+}
 @keyframes scroll-down {
   0% {
     opacity: 0;
