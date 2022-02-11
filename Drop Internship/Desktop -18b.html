@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop -18</title>
+    <link rel="stylesheet" href="Desktop -18b.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <div class="left">
+        <img src="logo.jpg" width="120px" alt=""/>  
+        </div>
+        <div class="right">
+          <a href="">Drop the Parcel</a>
+          <a href="">About Drop</a>
+          <a href="">Socials</a>
+          <a href="javascript:void(0);" class="icon" id="lol" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+        <div class="drone">
+            <img src="black-drone.gif" alt="">
+        </div>
+    
+   <div class="sec">
+    <button class="btn3">I Want ice-cream</button><br/><br/>
+       <button class="btn2">I Want Clothes</button><br/><br/>
+       <button class="btn3">I Want ice-cream</button><br/><br/>
+      <div class="space"><button class="btn3 ">I Need medicine</button></div>
+     
+       <button class="btn3">I hope they drop my burger to my gallary</button><br/>
+       <button class="btn2">I forgot my stuff at my friend's house</button>
+   </div>
+   <div class="pre preview" id="pre">
+    <div><a href="">Drop the Parcel</a></h1>
+    <div><a href="">About Drop</a></h1>
+    <div> <a href="">Socials</a></h1>
+  </div>
+  
+  
+  
+  <script>
+    function myFunction() {
+    var x = document.getElementById("pre");
+    var y = document.getElementById("lol");
+    if (x.className == "pre preview") {
+      x.classList.remove("preview")
+     
+    } else {
+      x.className = "pre preview";
+      y.innerHTML=` <i class="fa fa-bars">`
+    }
+  }
+  </script>
+</body>
+</html>
