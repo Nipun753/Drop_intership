@@ -6,45 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desktop -26</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="Desktop-25.css">
+    <link rel="stylesheet" href="Desktop-26.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <nav id="navbar">
-        <div id="logo">
-            <img src="logo.jpg" alt="Coffee">
+  
+    <nav class="topnav" id="myTopnav">
+        <div class="left">
+        <img src="logo.jpg" width="120px" alt=""/>  
         </div>
-
-        <ul>
-            <li class="item"><a href="#">Drop the Parcel</a></li>
-            <li class="item"><a href="#">About Drop</a></li>
-            <li class="item"><a href="#">Socials</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <div class="parcel">
-
+        <div class="right">
+          <a href="">Drop the Parcel</a>
+          <a href="">About Drop</a>
+          <a href="">Socials</a>
+          <a href="javascript:void(0);" class="icon" id="lol" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-
-    </section>
+      </nav>
    
-    <section id="home2">
+    
         <div class="drone">
             <img src="black-drone.gif" alt="">
+            </div>
+
+    <div id="hide">
+        <img class="tickimg" src="tick-removebg-preview.png" alt="">
+        <div class="wrapper">
+           <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+          </svg>
         </div>
-    </section>
-    <section>
-        <img  data-aos="zoom-out-down"
-        data-aos-duration="1000" class="calender" src="tick-removebg-preview.png" alt="">
+   
+    </div>
+    <div>
+      <img id="show" class="show" src="mobile-tickimg.png" alt="">
+    </div>    
+    <div class="pre preview" id="pre">
+        <div><a href="">Drop the Parcel</a></h1>
+        <div><a href="">About Drop</a></h1>
+        <div> <a href="">Socials</a></h1>
+      </div>
+      
+      
+      
+      <script>
+        function myFunction() {
+        var x = document.getElementById("pre");
+        var y = document.getElementById("lol");
         
-        
-    </section>
-    
-</div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init( );
-    </script>
+        if (x.className == "pre preview") {
+          x.classList.remove("preview")
+         
+
+         
+        } else {
+          x.className = "pre preview";
+        }
+      }
+      </script>
+
+ 
  
 </body>
 </html>
