@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Nav_bar_2.css">
+</head>
+<body>
+ 
+ 
+<nav class="topnav" id="myTopnav">
+  <div class="left">
+  <img src="logo.jpg" width="120px" alt=""/>  
+  </div>
+  <div class="right">
+    <a href="">Drop the Parcel</a>
+    <a href="">About Drop</a>
+    <a href="">Socials</a>
+    <a href="javascript:void(0);" class="icon" id="lol" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</nav>
+
+
+<div class="home">
+  <div class="parceldiv">
+    <p>Click the parcel to hang it on the drone</p>
+        <img class="parcel" id="parcel" src="parcel.png" alt="" >
+  </div>
+  <div class="dronediv">
+    <img class="homedrone" src="image-removebg-preview (1).png" alt=""/>
+  </div>
+  <img class="arrow" src="arrow-removebg-preview (1).png" alt=""/>
+</div>
+
+
+<div class="pre preview" id="pre">
+  <div><a href="">Drop the Parcel</a></h1>
+  <div><a href="">About Drop</a></h1>
+  <div> <a href="">Socials</a></h1>
+</div>
+
+
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("pre");
+  var y = document.getElementById("lol");
+  if (x.className == "pre preview") {
+    x.classList.remove("preview")
+    x.classList.add("open")
+    y.innerHTML=`<i class="fa fa-home"></i>`
+   
+  } else {
+    x.classList.add("close")
+    y.innerHTML=`<i class="fa fa-bars"></i>`
+    setTimeout(function(){
+      x.className = "pre preview";
+    },900)
+  }
+}
+</script>
+<script src="Nav Bar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+</body>
+</html>
