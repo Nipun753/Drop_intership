@@ -17,7 +17,7 @@ if(w>600){
 }
 else if(w<600) {
     gsap.to(".parcel",{
-        y:650,
+        y: 230,
         duration:4,
         scrollTrigger:{
             trigger:".parcel",
