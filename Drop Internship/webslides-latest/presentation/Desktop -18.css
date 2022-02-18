@@ -10,61 +10,7 @@ body {
   color: white;
   overflow: hidden;
 }
-i {
-  color: white;
-}
-.topnav {
-  display: flex;
-  flex-wrap: wrap;
-  height: 60px;
-  background-color: black;
-  color: white;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 20px;
-  margin-top: 10px;
-}
-.left {
-  margin-left: 60px;
-}
-.right a {
-  text-decoration: none;
-  color: white;
-  margin-right: 30px;
-}
-.right a:hover {
-  text-decoration: underline;
-}
-.icon {
-  display: none;
-}
 
-.drone img {
-  width: 641px;
-  height: 356px;
-  position: absolute;
-  right: 200px;
-  top: 150px;
-}
-.pre {
-  width: 200px;
-  text-align: center;
-  overflow: hidden;
-  float: right;
-  margin-top: 5px;
-}
-.pre div {
-  padding: 5px;
-}
-.pre a {
-  color: white;
-  margin-top: 5px;
-  text-decoration: none;
-  font-size: 20px;
-}
-.preview {
-  display: none;
-}
 button {
   background-color: rgb(19, 19, 19);
   color: white;
@@ -131,11 +77,7 @@ button {
   }
 }
 @media screen and (max-width: 600px) {
-  .pre {
-    position: absolute;
-    top: 60px;
-    right: 0px;
-  }
+ 
   .drone img {
     width: 350px;
     height: 200px;
